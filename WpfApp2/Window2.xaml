@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Window2" Height="500" Width="800">
+    <Grid Margin="0,0,0,1" RenderTransformOrigin="0.506,0.465">
+        <Rectangle Height="280" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Height="368" VerticalAlignment="Bottom" Margin="51,0,50,68" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid VerticalAlignment="Bottom" Margin="78,0,390,44" Height="392">
+            <Label Content="KAYIT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,0,0,0" Foreground="Gray" FontSize="18" RenderTransformOrigin="-4.673,-0.971" Width="75" Grid.RowSpan="2"/>
+            <StackPanel VerticalAlignment="Center" Margin="3,0,0,64" Height="328" RenderTransformOrigin="0.5,0.5">
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="AD" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="SOYAD"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <DatePicker Margin="40,30,10,0" materialDesign:HintAssist.Hint="DOĞUM TARİHİ" Height="28"/>
+                <ComboBox x:Name="combo1" SelectionChanged="Combo1_SelectionChanged" HorizontalAlignment="Left" Margin="40,30,10,0" materialDesign:HintAssist.Hint="DURUM" VerticalAlignment="Top" Width="140" Height="25"/>
+                <ComboBox Name="combo2" Margin="40,30,10,0" materialDesign:HintAssist.Hint="ŞİRKET" Visibility="Hidden"></ComboBox>
+                <TextBox Name="sirket" Margin="40,-40,10,0" materialDesign:HintAssist.Hint="ŞİRKET İSMİ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Visibility="Hidden"></TextBox>
+            </StackPanel>
+        </Grid>
+        <Grid VerticalAlignment="Bottom" Margin="407,0,55,44" Height="392">
+            <StackPanel VerticalAlignment="Center" Margin="3,0,0,64" Height="328" RenderTransformOrigin="0.5,0.5">
+                <TextBox Margin="40,40,40,0" materialDesign:HintAssist.Hint="KULLANICI ADI" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <PasswordBox Margin="40,40,40,0" materialDesign:HintAssist.Hint="ŞİFRE"  FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <Grid Height="36" Margin="40,25,10,0">
+                    <ComboBox HorizontalAlignment="Left" Margin="0,0,0,1" materialDesign:HintAssist.Hint="ŞEHİR" VerticalAlignment="Bottom" Width="88" Height="25"/>
+                    <TextBox HorizontalAlignment="Right" Margin="0,0,29,1" materialDesign:HintAssist.Hint="ADRES" FontFamily="Champagne &amp; Limousines" FontSize="10" Width="144"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="536,0,106,57" Content="KAYIT OL" HorizontalContentAlignment="Center"/>
+        <Button  x:Name="geri" Click="Geri_Click"  Height="Auto" Width="150" Margin="536,424,106,12" BorderBrush="{x:Null}" Content="GERİ"/>
+    </Grid>
+</Window>

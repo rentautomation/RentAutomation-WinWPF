@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp2.AracEkle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="AracEkle" Height="502.5" Width="800" ResizeMode="NoResize">
+
+    <Grid Margin="0,0,0,1" RenderTransformOrigin="0.506,0.465">
+        <Rectangle Height="280" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2281D1"/>
+                    <GradientStop Color="#FF34268A" Offset="1"/>
+                    <GradientStop Color="#FF33288B" Offset="0.546"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Rectangle Height="368" VerticalAlignment="Bottom" Margin="51,0,50,68" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid VerticalAlignment="Bottom" Margin="76,0,392,44" Height="392">
+            <Label Content="ARAÇ EKLE" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,0,0,0" Foreground="Gray" FontSize="18" RenderTransformOrigin="-4.673,-0.971" Width="238"/>
+            <StackPanel VerticalAlignment="Center" Margin="3,39,0,0" Height="353" RenderTransformOrigin="0.5,0.5">
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="MARKA"  FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="MODEL"   FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="YIL"   FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="EHLİYET YAŞI"   FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="MİN. YAŞ SINIRI"   FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,10,0" materialDesign:HintAssist.Hint="GÜNLÜK SINIR KM"   FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+
+            </StackPanel>
+        </Grid>
+        <Grid VerticalAlignment="Bottom" Margin="407,0,55,44" Height="392">
+            <StackPanel VerticalAlignment="Center" Margin="3,39,0,0" Height="353" RenderTransformOrigin="0.5,0.5">
+                <TextBox Margin="40,30,40,0" materialDesign:HintAssist.Hint="ANLIK KM" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <ComboBox Name="combo4" HorizontalAlignment="Left" Margin="40,25,0,0" materialDesign:HintAssist.Hint="AİR BAG" VerticalAlignment="Bottom" Width="249" Height="25"/>
+                <TextBox Margin="40,30,40,0" materialDesign:HintAssist.Hint="BAGAJ HACMİ" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,40,0" materialDesign:HintAssist.Hint="KOLTUK SAYISI" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+                <TextBox Margin="40,30,40,0" materialDesign:HintAssist.Hint="FİYAT" FontFamily="Champagne &amp; Limousines" FontSize="10"/>
+            </StackPanel>
+        </Grid>
+        <Button Click="Button_Click" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="536,0,106,57" Content="ARAÇ EKLE" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>
