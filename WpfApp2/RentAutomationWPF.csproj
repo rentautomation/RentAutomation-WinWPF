@@ -44,6 +44,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -65,6 +67,11 @@
     </ApplicationDefinition>
     <Compile Include="AracEkle.xaml.cs">
       <DependentUpon>AracEkle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\CustomerWebServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Personel.xaml.cs">
       <DependentUpon>Personel.xaml</DependentUpon>
@@ -122,6 +129,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Connected Services\CustomerWebServices\CustomerWebService.wsdl" />
+    <None Include="Connected Services\CustomerWebServices\WpfApp2.CustomerWebServices.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,6 +147,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assest\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\CustomerWebServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CustomerWebServices\CustomerWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CustomerWebServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CustomerWebServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CustomerWebServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

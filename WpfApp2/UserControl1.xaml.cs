@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp2
+namespace RentAutomationWPF
 {
     /// <summary>
     /// UserControl1.xaml etkileşim mantığı

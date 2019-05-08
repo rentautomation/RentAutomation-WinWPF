@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp2", "WpfApp2\WpfApp2.csproj", "{4BE99FFB-90AE-410B-85A1-EEFA9949AE19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentAutomationWPF", "WpfApp2\RentAutomationWPF.csproj", "{4BE99FFB-90AE-410B-85A1-EEFA9949AE19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,8 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using RentAutomationWPF.CustomerWebServices;
 
-namespace WpfApp2
+namespace RentAutomationWPF
 {
     /// <summary>
     /// Window2.xaml etkileşim mantığı
