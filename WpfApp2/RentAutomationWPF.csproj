@@ -41,6 +41,9 @@
     <Reference Include="MaterialDesignThemes.Wpf, Version=2.3.1.953, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignThemes.2.3.1.953\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Rent.Model">
+      <HintPath>..\..\rentautomation3\Rent.Business\bin\Debug\Rent.Model.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -68,7 +71,7 @@
     <Compile Include="AracEkle.xaml.cs">
       <DependentUpon>AracEkle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\CustomerWebServices\Reference.cs">
+    <Compile Include="Connected Services\CustomerWebService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -79,8 +82,8 @@
     <Compile Include="UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window2.xaml.cs">
-      <DependentUpon>Window2.xaml</DependentUpon>
+    <Compile Include="RegisterWindow.xaml.cs">
+      <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AracEkle.xaml">
       <SubType>Designer</SubType>
@@ -106,7 +109,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window2.xaml">
+    <Page Include="RegisterWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,8 +132,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Connected Services\CustomerWebServices\CustomerWebService.wsdl" />
-    <None Include="Connected Services\CustomerWebServices\WpfApp2.CustomerWebServices.HelloWorldResponse.datasource">
+    <None Include="Connected Services\CustomerWebService\CustomerWebService.wsdl" />
+    <None Include="Connected Services\CustomerWebService\WpfApp2.CustomerWebService.Customer.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -152,19 +155,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CustomerWebServices\" />
+    <WCFMetadataStorage Include="Connected Services\CustomerWebService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CustomerWebServices\CustomerWebService.disco" />
+    <None Include="Connected Services\CustomerWebService\CustomerWebService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CustomerWebServices\configuration91.svcinfo" />
+    <None Include="Connected Services\CustomerWebService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CustomerWebServices\configuration.svcinfo" />
+    <None Include="Connected Services\CustomerWebService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CustomerWebServices\Reference.svcmap">
+    <None Include="Connected Services\CustomerWebService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

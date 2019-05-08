@@ -40,7 +40,7 @@ namespace RentAutomationWPF {
     /// <summary>
     /// Window2
     /// </summary>
-    public partial class Window2 : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+    public partial class RegisterWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
         #line 32 "..\..\Window2.xaml"

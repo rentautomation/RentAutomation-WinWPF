@@ -28,7 +28,7 @@ namespace RentAutomationWPF
         private void Kayit_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            Window2 wnd = new Window2();
+            RegisterWindow wnd = new RegisterWindow();
             wnd.ShowDialog();
         }
 
